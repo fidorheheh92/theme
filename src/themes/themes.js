@@ -29,6 +29,15 @@
       cssFile: "/src/themes/supremacy.css",
     },
     {
+  id: "war_new",
+  label: "War",
+  author: "custom",
+  thumbnail: "/src/themes/thumbnails/war_new.jpg",
+  swatch: "#90762C",
+  swatchRgb: "144, 118, 44",
+  cssFile: "/src/themes/war_new.css",
+    },
+    {
       id: "mercy",
       label: "Vanilla Mercy",
       author: "voxlis",

@@ -1,0 +1,344 @@
+/* ============================================================
+   war_new.css — Voxlis Full Theme
+   Generated from war_new.txt theme export
+   Usage: place in src/themes/war_new.css
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Fira+Code:wght@400;500&display=swap");
+
+:root[data-theme="war_new"] {
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-family-base: "Crimson Text", serif;
+  --font-family-ui: "Cinzel", "Crimson Text", serif;
+  --font-family-system: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-family-mono: "Fira Code", "Consolas", monospace;
+  --card-font-family: "Crimson Text", serif;
+
+  /* ── Accent / Brand Colors ──────────────────────────────── */
+  --theme-main-color: #90762C;
+  --theme-hover-color: #A8A380;
+  --theme-gradient-start-color: #90762C;
+  --theme-gradient-end-color: #A8A380;
+  --theme-rgb: 144, 118, 44;
+  --theme-color: #90762C;
+
+  --prim: #90762C;
+  --prim-hvr: #A8A380;
+  --prim-grd: linear-gradient(to right, #90762C, #A8A380);
+  --prim-glw: rgba(144, 118, 44, 0.5);
+  --prim-rgb: 144, 118, 44;
+
+  --prim-glow-shadow: 0 0 0.45rem rgba(144, 118, 44, 0.7), 0 0 1rem rgba(144, 118, 44, 0.55);
+
+  /* ── Background & Surfaces ──────────────────────────────── */
+  --bg: #000000;
+  --fg: #F0EAD6;
+  --bg-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent, rgba(0, 0, 0, 0.6));
+
+  --crd-bg: rgba(0, 0, 0, 0.4);
+  --crd-bdr: #373737;
+  --crd-hvr: rgba(144, 118, 44, 0.2);
+
+  --site-border-color: #373737;
+  --site-outline-color: #373737;
+
+  --sec: rgba(0, 0, 0, 0.3);
+  --sec-bdr: #373737;
+  --sec-hvr: rgba(144, 118, 44, 0.1);
+  --sec-hvr-bdr: rgba(144, 118, 44, 0.5);
+
+  --txt-mut: rgba(156, 163, 175, 1);
+
+  --shd: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --shd-hvr: 0 15px 30px rgba(0, 0, 0, 0.3);
+  --rad: 0.5rem;
+
+  /* ── Background Media (Wallpaper) ───────────────────────── */
+  --theme-background-media-url: url("https://shared.fastly.steamstatic.com/community_assets/images/items/736820/e59191dd240eb578b70b6b0b845570057cf40a71.webm");
+  --background-media-overlay-color: #000000;
+  --background-media-overlay-strength: 58;
+
+  /* ── Card Surfaces ───────────────────────────────────────── */
+  --card-surface-background: rgba(26, 22, 8, 0.18) !important;
+  --card-surface-backdrop-blur: 11px;
+  --card-surface-tint: rgba(26, 22, 8, 0.18) !important;
+  --exploit-card-chrome: #373737;
+
+  --card-action-button-tint-color: #1A1608;
+  --card-action-button-tint-power: 55;
+  --card-action-button-background: rgba(26, 22, 8, 0.55);
+  --card-action-button-background-hover: rgba(26, 22, 8, 0.63);
+  --card-action-button-text: rgba(210, 200, 165, 0.9);
+
+  --card-sponsor-button-tint-color: #1A1608;
+  --card-sponsor-button-tint-power: 55;
+  --card-sponsor-button-background: rgba(26, 22, 8, 0.55);
+  --card-sponsor-button-background-hover: rgba(26, 22, 8, 0.63);
+  --card-sponsor-button-text: rgba(240, 234, 214, 0.96);
+
+  /* ── Badges ──────────────────────────────────────────────── */
+  --bdg-color: rgba(144, 118, 44, 0.3);
+  --bdg-b-color: rgba(144, 118, 44, 0.1);
+
+  /* ── Status Dots ─────────────────────────────────────────── */
+  --status-updated-color: #A8A380;
+  --status-updated-rgb: 168, 163, 128;
+  --status-not-updated-color: #212121;
+  --status-not-updated-rgb: 33, 33, 33;
+
+  /* ── Inputs ──────────────────────────────────────────────── */
+  --inp-color: #90762C;
+  --inp2-color: rgba(144, 118, 44, 0.5);
+  --lbl-color: #90762C;
+  --lbl2-color: white;
+  --checkbx-color: rgba(144, 118, 44, 0.1);
+  --checkbx2-color: rgba(144, 118, 44, 0.3);
+
+  /* ── Misc Hover Colors ───────────────────────────────────── */
+  --social-hover: #90762C;
+  --card-hover: #90762C;
+  --link-muted: rgba(255, 255, 255, 0.8);
+  --srch-dflt: rgb(133, 133, 133);
+  --smooth-ease: cubic-bezier(0.65, 0, 0.35, 1);
+  --smooth-duration: 0.45s;
+
+  /* ── Ad Colors ───────────────────────────────────────────── */
+  --ad-color: #90762C;
+  --ad2-color: #90762C;
+  --ad3-color: linear-gradient(90deg, #AF9C67, #705C22);
+
+  /* ── Warning ─────────────────────────────────────────────── */
+  --warning-bg: linear-gradient(135deg, #AF9C67, #5E4D1D);
+
+  /* ── Navbar ──────────────────────────────────────────────── */
+  --navbar-height: 4rem;
+  --hdr-h: 4rem;
+  --navbar-background: rgba(26, 22, 8, 0.18) !important;
+  --navbar-mobile-panel-background: rgba(26, 22, 8, 0.18) !important;
+  --navbar-position: sticky;
+  --navbar-top: 0px;
+  --navbar-scrolled-border: #282111;
+  --navbar-search-max-width: 500px;
+  --navbar-search-background: rgba(10, 8, 2, 0.5);
+  --navbar-search-background-focus: rgba(10, 8, 2, 0.5);
+  --navbar-search-clear-color: rgba(156, 163, 175, 1);
+  --navbar-button-background: rgba(144, 118, 44, 0.1);
+  --navbar-button-accent-background: linear-gradient(to right, #90762C, #A8A380);
+  --navbar-button-accent-border: rgba(144, 118, 44, 0.5);
+  --navbar-button-hover-shadow: 0 0 0.45rem rgba(144, 118, 44, 0.7), 0 0 1rem rgba(144, 118, 44, 0.55);
+  --navbar-warning-background: linear-gradient(135deg, #AF9C67, #5E4D1D);
+  --navbar-warning-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  --navbar-mobile-menu-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+  --navbar-mobile-link-background: rgba(255, 255, 255, 0.03);
+  --navbar-mobile-link-accent-background: rgba(144, 118, 44, 0.1);
+  --navbar-mobile-toggle-background: rgba(255, 255, 255, 0.04);
+  --navbar-mobile-toggle-background-hover: rgba(255, 255, 255, 0.1);
+  --mob-panel-pad: 0.6rem;
+  --navbar-mobile-panel-padding: 0.6rem;
+  --mob-quick-gap: 0.55rem;
+  --navbar-mobile-quick-gap: 0.55rem;
+  --mob-quick-icon-size: 1.4rem;
+  --navbar-mobile-quick-icon-size: 1.4rem;
+  --mob-quick-icon-font: 1rem;
+  --navbar-mobile-quick-icon-font-size: 1rem;
+  --mob-quick-solid-size: 2.25rem;
+  --navbar-mobile-quick-accent-size: 2.25rem;
+  --mob-quick-solid-radius: 0.5rem;
+  --navbar-mobile-quick-accent-radius: 0.5rem;
+  --navbar-scroll-flash-gradient: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.72) 6%,
+    rgba(255, 255, 255, 0.98) 14%,
+    rgba(255, 255, 255, 0.98) 86%,
+    rgba(255, 255, 255, 0.72) 94%,
+    transparent 100%
+  );
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  --footer-bg: rgba(26, 22, 8, 0.16) !important;
+  --footer-border: #373737;
+  --footer-text: #D1CDBE;
+  --footer-muted: rgba(168, 163, 128, 0.8);
+  --footer-follow-global-surface: 1;
+  --footer-surface-tint-color: #000000;
+  --footer-surface-tint-power: 82;
+  --footer-surface-outline-color: #3A3220;
+  --footer-surface-blur-enabled: 0;
+  --footer-surface-blur-strength: 11;
+  --footer-backdrop-blur: 11px;
+  --footer-glow-color: #90762C;
+  --footer-max-width: 1200px;
+  --footer-horizontal-padding: 2rem;
+  --footer-padding-block: 2.5rem;
+  --footer-section-gap: 2rem;
+  --footer-section-divider-spacing: 1.5rem;
+  --footer-overlay-gradient: linear-gradient(
+    to top,
+    rgba(144, 118, 44, 0.12) 0%,
+    rgba(144, 118, 44, 0.065) 16%,
+    rgba(144, 118, 44, 0.03) 32%,
+    rgba(144, 118, 44, 0.012) 48%,
+    rgba(144, 118, 44, 0) 66%
+  );
+  --footer-logo-height: 40px;
+  --footer-logo-height-mobile: 32px;
+  --footer-link-gap: 1.5rem;
+  --footer-theme-control-height: 2.85rem;
+  --footer-theme-control-height-mobile: 2.7rem;
+  --footer-theme-menu-shadow: 0 -10px 25px rgba(0, 0, 0, 0.3);
+  --footer-theme-option-hover-background: rgba(255, 255, 255, 0.1);
+  --footer-theme-option-selected-background: rgba(255, 255, 255, 0.05);
+  --footer-theme-swatch-size: 1rem;
+  --footer-theme-swatch-border: rgba(255, 255, 255, 0.3);
+  --footer-theme-swatch-default: #90762C;
+  --footer-theme-highlight-shadow: 0 0 0 1px rgba(144, 118, 44, 0.44), 0 0 1.25rem rgba(144, 118, 44, 0.28), 0 0 2.5rem rgba(144, 118, 44, 0.18);
+  --footer-heart-size: 1.24rem;
+  --footer-heart-fill: linear-gradient(
+    135deg,
+    rgba(144, 118, 44, 0.5) 0%,
+    rgba(144, 118, 44, 0.72) 34%,
+    #90762C 100%
+  );
+  --footer-credit-color: #90762C;
+  --footer-meta-text-size: 0.75rem;
+  --footer-status-gap: 0.4rem;
+  --footer-status-dot-size: 0.4rem;
+  --footer-status-live-color: rgba(168, 163, 128, 0.95);
+  --footer-status-muted-color: rgba(33, 33, 33, 0.9);
+
+  /* ── Filter Drawer ───────────────────────────────────────── */
+  --filter-overlay-background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0.5) 56%,
+    rgba(0, 0, 0, 0.42) calc(100% - 460px),
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  --filter-panel-background: rgba(0, 0, 0, 0.95);
+  --filter-panel-border: #373737;
+  --filter-panel-max-width: 400px;
+  --filter-panel-padding: 1.5rem;
+  --filter-section-spacing: 1.5rem;
+  --filter-section-title-color: rgba(209, 213, 219, 1);
+  --filter-section-dot-fill: #90762C;
+  --filter-close-color: rgba(203, 213, 225, 0.82);
+  --filter-close-color-hover: rgba(248, 250, 252, 0.96);
+  --filter-option-background: rgba(0, 0, 0, 0.3);
+  --filter-option-border: #373737;
+  --filter-option-background-active: rgba(144, 118, 44, 0.1);
+  --filter-option-border-active: rgba(144, 118, 44, 0.5);
+  --filter-option-text-active: #90762C;
+  --filter-checkbox-background: rgba(0, 0, 0, 0.95);
+  --filter-checkbox-border: rgba(255, 255, 255, 0.2);
+  --filter-checkbox-background-hover: rgba(144, 118, 44, 0.1);
+  --filter-checkbox-border-hover: rgba(144, 118, 44, 0.3);
+  --filter-dropdown-option-hover-background: rgba(255, 255, 255, 0.1);
+  --filter-dropdown-option-selected-background: rgba(144, 118, 44, 0.2);
+  --filter-reset-background: transparent;
+  --filter-reset-border: #373737;
+  --filter-reset-border-hover: rgba(144, 118, 44, 0.5);
+  --filter-reset-color: #F0EAD6;
+  --filter-apply-background: linear-gradient(to right, #90762C, #A8A380);
+
+  /* ── Surface Controls ────────────────────────────────────── */
+  --surface-control-bg: rgba(0, 0, 0, 0.5);
+  --surface-control-bg-hover: rgba(0, 0, 0, 0.7);
+  --surface-overlay-bg: rgba(0, 0, 0, 0.95);
+
+  /* ── Info Modal ──────────────────────────────────────────── */
+  --info-modal-follow-global-surface: 0;
+  --info-modal-surface-tint-color: #000000;
+  --info-modal-surface-tint-power: 88;
+  --info-modal-surface-outline-color: #3A3220;
+  --info-modal-surface-blur-enabled: 0;
+  --info-modal-surface-blur-strength: 12;
+  --info-modal-background: rgba(0, 0, 0, 0.88);
+  --info-modal-backdrop-blur: 0px;
+  --info-modal-header-accent-color: #90762C;
+  --info-modal-header-background: linear-gradient(to right, rgba(144, 118, 44, 0.12), transparent);
+
+  /* ── Featured Card ───────────────────────────────────────── */
+  --featured-follow-global-surface: 1;
+  --featured-surface-tint-color: #000000;
+  --featured-surface-tint-power: 82;
+  --featured-surface-outline-color: #373737;
+  --featured-surface-blur-enabled: 0;
+  --featured-surface-blur-strength: 11;
+  --featured-surface-background: rgba(26, 22, 8, 0.18);
+  --featured-surface-backdrop-blur: 11px;
+  --featured-section-spacing: 1rem;
+  --featured-hide-duration: 220ms;
+  --featured-card-max-width: 400px;
+  --featured-card-border: #373737;
+  --featured-card-radius: 0.75rem;
+  --featured-card-header-padding: 0.625rem 0.9375rem;
+  --featured-card-header-border: #373737;
+  --featured-card-body-padding: 0.9375rem;
+  --featured-card-accent-height: 0.25rem;
+  --featured-card-accent-fill: #90762C;
+  --featured-title-font-size: 1rem;
+  --featured-title-color: #F0EAD6;
+  --featured-title-letter-spacing: 1px;
+  --featured-action-color: rgba(168, 163, 128, 0.75);
+  --featured-action-hover-color: #A8A380;
+  --featured-image-background: rgba(8, 8, 8, 0.25);
+  --featured-image-radius: 0.5rem;
+  --featured-overlay-fill: linear-gradient(90deg, #987C2F 0%, #90762C 65%, #ffffff 100%);
+  --featured-overlay-opacity: 0.98;
+  --featured-overlay-mask: url("/public/assets/featured/overlay-voxlis.png");
+
+  /* ── Banner / Header Overlays ────────────────────────────── */
+  --banner-overlay-fill: linear-gradient(90deg, #987C2F 0%, #90762C 65%, #A8A380 100%);
+  --banner-overlay-opacity: 0.98;
+  --banner-overlay-mask: url("/public/assets/banner/voxlis-banner.png");
+  --header-overlay-fill: linear-gradient(90deg, #987C2F 0%, #90762C 65%, #A8A380 100%);
+  --header-overlay-opacity: 0.98;
+  --header-overlay-mask: url("/public/assets/header/voxlis-banner.png");
+
+  /* ── Brand Gradient ──────────────────────────────────────── */
+  --brand-gradient-enabled: 1;
+  --brand-gradient-color: #987C2F;
+  --brand-gradient-offset: 65%;
+
+  /* ── Promo Section ───────────────────────────────────────── */
+  --hero-width: 48rem;
+  --promo-hero-max-width: 48rem;
+  --promo-text-max-width: 36rem;
+  --promo-card-background: rgba(26, 22, 8, 0.18) !important;
+  --promo-card-padding: clamp(1.4rem, 3.2vw, 2rem);
+  --promo-grid-fill: linear-gradient(to right, rgba(144, 118, 44, 0.05), transparent);
+  --promo-glow-size: 8rem;
+  --promo-glow-offset: -1.5rem;
+  --promo-glow-fill: rgba(144, 118, 44, 0.1);
+  --promo-glow-blur: 3rem;
+  --promo-accent-width: 0.5rem;
+  --promo-accent-height: 2.05rem;
+  --promo-accent-fill: linear-gradient(to bottom, #90762C, #A8A380);
+  --promo-accent-gap: 1.5rem;
+  --promo-accent-offset-top: 0.15rem;
+  --promo-title-accent: #90762C;
+  --promo-description: rgba(156, 163, 175, 1);
+  --promo-button-gap: 0.65rem;
+  --promo-button-fill: linear-gradient(to right, #90762C, #A8A380);
+  --promo-button-text: #ffffff;
+  --promo-button-padding: 0.75rem 1.5rem;
+  --promo-button-shadow: 0 4px 6px -1px rgba(144, 118, 44, 0.1), 0 2px 4px -1px rgba(144, 118, 44, 0.05);
+  --promo-button-hover-shadow: 0 0 0.45rem rgba(144, 118, 44, 0.7), 0 0 1rem rgba(144, 118, 44, 0.55);
+  --promo-button-icon-fill: #90762C;
+  --promo-button-icon-color: #ffffff;
+  --promo-button-icon-radius: 0.25rem;
+  --promo-button-shine: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  --promo-muted-button-text: rgba(209, 213, 219, 0.9);
+  --promo-muted-button-icon: rgba(156, 163, 175, 0.95);
+  --promo-banner-max-width: 600px;
+
+  /* ── Kawaii Mobile Tints ─────────────────────────────────── */
+  --kawaii-mobile-surface-tint: rgba(0, 0, 0, 0.82);
+  --kawaii-mobile-footer-tint: rgba(0, 0, 0, 0.84);
+  --kawaii-mobile-navbar-tint: rgba(0, 0, 0, 0.94);
+
+  /* ── Sponsor / Heart SVG Masks ───────────────────────────── */
+  --sponsor-overlay-mask: url("/public/assets/logo/keyempire-logo.png");
+  --footer-heart-mask: url("/public/assets/ads/heart.svg");
+}
